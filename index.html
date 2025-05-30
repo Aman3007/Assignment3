@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form validation</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="errors"></div>
+   <div id="success"></div>
+<form id="form">
+<div class="formelement">
+  <label for="name">Name</label>
+  <input type="text" name="name" id="name" >
+</div>
+<div class="formelement">
+  <label for="email">Email</label>
+  <input type="email" name="email" id="email" >
+</div>
+<div class="formelement">
+  <label for="phone">Phone No</label>
+  <input type="text"
+    name="phone"
+    id="phone"
+    placeholder="10 digits only"
+    maxlength="10"
+    >
+</div>
+<div class="formelement">
+  <label for="Password" id="plable">Password</label>
+  <input type="password" name="Password" id="Password">
+  <button id="show">show</button>
+   <button id="hide">hide</button>
+</div>
+<div class="formelement">
+  <label for="confirmPassword" id="cplable">Confirm-Password</label>
+  <input type="password" name="confirmPassword" id="confirmPassword">
+  <button id="confirmshow">show</button>
+   <button id="confirmhide">hide</button>
+</div>
+<div class="submit">
+  <button id="submit" type="submit">Submit</button>
+</div>
+</form>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+
+

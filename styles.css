@@ -1,0 +1,112 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+}
+
+#errors {
+  color: red;
+  margin-top: 30px;
+  width: 450px;
+  font-size: 1.4rem;
+  height: fit-content;
+  margin-left: 35%;
+  margin-bottom: 0;
+}
+
+#success {
+  color: green;
+  margin-top: 30px;
+  width: 250px;
+  font-size: 1.4rem;
+  height: fit-content;
+  margin-left: 42%;
+  margin-bottom: 0;
+}
+
+#form {
+  margin-left: 28%;
+  width: 650px;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
+.formelement {
+  margin-bottom: 20px;
+}
+
+
+#show {
+  width: 40px;
+  padding: 2px;
+  font-size: 8px;
+  position: relative;
+  top: 60px;
+}
+
+#hide {
+    width: 40px;
+  padding: 2px;
+  font-size: 8px;
+  position: relative;
+  top: 60px;
+  display: none;
+}
+#confirmshow {
+  width: 40px;
+  padding: 2px;
+  font-size: 8px;
+  position: relative;
+  top: 60px;
+}
+
+#confirmhide {
+    width: 40px;
+  padding: 2px;
+  font-size: 8px;
+  position: relative;
+  top: 60px;
+  display: none;
+}
+
+label {
+  width: 200px;
+  float: left;
+  position: relative;
+  top: 60px;
+  font-size: 2rem;
+}
+
+input {
+  width: 250px;
+  padding: 15px;
+  font-size: 15px;
+  position: relative;
+  top: 60px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+#plable{
+  margin-left: 44px;
+}
+#cplable{
+  margin-left: 44px;
+}
+.submit {
+  position: relative;
+  top: 50px;
+  margin-left: 40px;
+}
+
+button {
+  width: 100px;
+  padding: 10px;
+  margin-top: 30px;
+  background-color: lightblue;
+  border: 1px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+}
