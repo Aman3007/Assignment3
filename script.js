@@ -7,7 +7,7 @@ const input = document.getElementById('phone');
     this.value = this.value.replace(/[^0-9]/g, '');
   });
 function isEmail(email) {
-  var regex = /^[A-Za-z0-9]{2,10}[@A-Za-z]{3,10}.[a-z]{3}$/;
+  var regex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
 
   return regex.test(email);
 }
@@ -17,7 +17,7 @@ function isPhone(phoneno) {
 }
 
 function isName(name) {
-  var regex = /^[A-Za-z]{4,8}\s[A-Za-z]{3,8}$/;
+  var regex = /^[A-Za-z\s]{2,}$/;
   return regex.test(name);
 }
 function isPassword(password) {
@@ -58,7 +58,7 @@ $("#submit").click(function () {
     $("#errors").html(errormessage)
   }
   else if (!isPassword(password)) {
-    errormessage = ("<p>Please add a Password(minimum length 6,at least 1 uppercase letter,at least 1 lowercase letter, at lease 1 number)</p>")
+    errormessage = ("<p>Please add a Password(minimum length 6,at least 1 uppercase letter,at least 1 lowercase letter, at lease 1 number and no special character)</p>")
     $("#success").html("")
     $("#errors").html(errormessage)
   }
