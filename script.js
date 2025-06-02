@@ -21,7 +21,7 @@ function isName(name) {
   return regex.test(name);
 }
 function isPassword(password) {
-  var regex = /^(?=.*[0-9])(?=.*[A-Z])[a-zA-z0-9]{6,10}$/;
+  var regex = /^(?=.*[0-9])(?=.*[A-Z]).{6,12}$/;
   return regex.test(password);
 }
 function isConfirmpass(confirmpassword,password) {
